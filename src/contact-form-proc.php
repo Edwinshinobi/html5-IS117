@@ -13,8 +13,8 @@ if(empty($_POST['fullname']) || empty($_POST['email']))
 	}
 
 $name =	$_POST['fullname'];							$email=	$_POST['email'];
-mail('ege2@njit.edu','New form submission','New	form submission: Name: $name,
-Email:$email');
+mail('ege2@njit.edu','New form submission','New	form submission: Name:'. $name
+. 'Email:' . $email);
 
 header('Location:thank-you.html');
 ?>
